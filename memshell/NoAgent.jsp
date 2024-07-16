@@ -288,7 +288,7 @@ public class NoAgent
 
         if (instrumentation.isRetransformClassesSupported()){
             System.out.println("[NoAgent] will retransform the class: " + targetClass.getName());
-            String matcher = this.targetClass.getName().replace(".", "/");
+            final String matcher = this.targetClass.getName().replace(".", "/");
 
             instrumentation.addTransformer(new ClassFileTransformer() {
                 @Override
