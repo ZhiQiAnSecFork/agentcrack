@@ -628,7 +628,7 @@ public class AgentX
             return;
         }
 
-        Hack hack = new Hack(this);
+        final Hack hack = new Hack(this);
         new Thread(new Runnable() {
             @Override
             public void run() {
